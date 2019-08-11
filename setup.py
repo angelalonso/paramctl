@@ -1,12 +1,21 @@
-from setuptools import setup, find_packages
- 
-setup(name='paramctl',
-      version='0.1',
-      url='https://github.com/angelalonso/paramctl',
-      license='Gnu GPLv3',
-      author='Angel Alonso',
-      author_email='alonsofonseca.angel@gmail.com',
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+     name='paramctl',  
+     version='0.054',
+     author="Angel Alonso",
+     author_email="alonsofonseca.angel@gmail.com",
       description='Define nested parameters accepted via json file',
-      packages=find_packages(exclude=['tests']),
-      long_description=open('README.md').read(),
-      zip_safe=False)
+     long_description=long_description,
+   long_description_content_type="text/markdown",
+     url="https://github.com/angelalonso/pctl",
+     packages=setuptools.find_packages(),
+     classifiers=[
+         "Programming Language :: Python :: 3",
+         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+     ],
+     python_requires='>=3',
+ )
