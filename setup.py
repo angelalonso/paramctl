@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='paramctl',  
-     version='0.055',
+     version='0.056',
      author="Angel Alonso",
      author_email="alonsofonseca.angel@gmail.com",
       description='Manage nested parameters through a json file',

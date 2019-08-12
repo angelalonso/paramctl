@@ -1,7 +1,7 @@
 # paramctl
 A Python library to match positional parameters based on a json file
 
-When added properly o your script, you should be able to trigger actions like this:  
+When integrated properly to your script, you should be able to trigger actions like this:  
 ```script.py action object extra_parameter_1 extra_parameter_n```
 
 ## How does it work
@@ -44,3 +44,9 @@ except KeyError:
     print("No function available like " + " ".join(function[:]))
 
 ```
+, finally, create the functions defined on the Json (under "action") like this: 
+```
+def get_nodes(*argv):
+    ...
+```
+...and manage the arguments as you please.
