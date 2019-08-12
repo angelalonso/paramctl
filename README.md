@@ -38,7 +38,7 @@ The Json file should look like this:
   }
 }
 ```
-, where the amount of actions is -sort-of- unlimited, and objects can but does not have to
+, where the amount of actions is -sort-of- unlimited, and any object can but does not have to
   belong under several actions.  
 
 
@@ -46,16 +46,16 @@ On your python code (e.g.: myscript.py) add the following:
 ```
 import paramctl
 
-params = paramctl.ParameterMap("parametermap.json")
+params = paramctl.ParameterMap("parametermap.json") # or whatever you call your json file
 try:
     print(globals()[function[0]](function[1:]))
 except KeyError:
     print("No function available like " + " ".join(function[:]))
 
 ```
-, finally, create the functions defined on the Json (under "action") like this: 
+, finally, create the functions defined on the json file (under "action") like this: 
 ```
 def get_nodes(*argv):
     ...
 ```
-...and manage the arguments as you please.
+...and manage the arguments passed (as a tuple) as you please.
