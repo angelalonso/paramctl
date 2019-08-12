@@ -8,7 +8,7 @@ setuptools.setup(
      version='0.055',
      author="Angel Alonso",
      author_email="alonsofonseca.angel@gmail.com",
-      description='Define nested parameters accepted via json file',
+      description='Manage nested parameters through a json file',
      long_description=long_description,
    long_description_content_type="text/markdown",
      url="https://github.com/angelalonso/pctl",
