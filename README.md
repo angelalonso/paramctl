@@ -5,7 +5,10 @@ When integrated properly to your script, you should be able to trigger actions l
 ```script.py action object extra_parameter_1 extra_parameter_n```
 
 ## Installation
-pip3 install paramctl
+```pip3 install paramctl```
+
+## Requirements
+This thing obviously needs json. 
 
 ## How does it work
 You will need a Json file to define the accepted actions and objects  
