@@ -4,6 +4,9 @@ A Python library to match positional parameters based on a json file
 When integrated properly to your script, you should be able to trigger actions like this:  
 ```script.py action object extra_parameter_1 extra_parameter_n```
 
+## Installation
+pip3 install paramctl
+
 ## How does it work
 You will need a Json file to define the accepted actions and objects  
 
@@ -32,6 +35,9 @@ The Json file should look like this:
   }
 }
 ```
+, where the amount of actions is -sort-of- unlimited, and objects can but does not have to
+  belong under several actions.  
+
 
 On your python code (e.g.: myscript.py) add the following:
 ```
